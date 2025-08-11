@@ -1,9 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
 
 dotenv.config();
 const app = express();
+app.use(cors({ origin: 'https://689a3bc6adcb53cb7f459f45--legaleagl.netlify.app/#'}));
 app.use(express.json());
 
 // API route for Gemini calls
