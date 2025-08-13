@@ -5,7 +5,14 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const app = express();
-app.use(cors({ origin: 'https://689a3bc6adcb53cb7f459f45--legaleagl.netlify.app/#'}));
+
+app.use(cors({
+  origin: [
+    'https://689a3bc6adcb53cb7f459f45--legaleagl.netlify.app',
+    'https://legaleagl.netlify.app',
+    'http://localhost:3000'
+  ]
+}));
 app.use(express.json());
 
 // API route for Gemini calls
