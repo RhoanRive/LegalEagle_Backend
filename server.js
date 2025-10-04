@@ -10,7 +10,9 @@ app.use(cors({
   origin: [
     'https://689a3bc6adcb53cb7f459f45--legaleagl.netlify.app',
     'https://legaleagl.netlify.app',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://mzansilegal.co.za',
+    'htttps://www.mzansilegal.co.za'
   ]
 }));
 app.use(express.json());
